@@ -1,7 +1,78 @@
+import Story from "./Story";
+import Profile1 from "../assets/profilePic/melo.jpg";
+import Profile2 from "../assets/profilePic/knucles.jpg";
+import Profile3 from "../assets/profilePic/crossing.png";
+import Profile4 from "../assets/profilePic/Ino.jpg";
+import Profile5 from "../assets/profilePic/link.jpg";
+import Profile6 from "../assets/profilePic/Niko.jpg";
+import Profile7 from "../assets/profilePic/Vert.jpg";
+import FeedContent from "./FeedContent";
+import ProfilePic from "../assets/profilePic/melo.jpg";
+import Post from "../assets/posts/Lancer.jpg";
+import Post2 from "../assets/posts/SetupGamer.jpg";
+import Post3 from "../assets/posts/MazdaRX7.jpg";
+import Post4 from "../assets/posts/PixelArt.gif";
+import Post5 from "../assets/posts/Academia.jpg";
+
 export default function CentralContent(){
     return(
         <div className="centralContent">
-            <h1>Conteudo Central</h1>
+            <div className="storyOrder">
+                <Story image={Profile1} nome="Melo"/>
+                <Story image={Profile2} nome="Mr_Knucles"/>
+                <Story image={Profile3} nome="IsabelLayer"/>
+                <Story image={Profile4} nome="Shiba_INO"/>
+                <Story image={Profile5} nome="Link"/>
+                <Story image={Profile6} nome="N1k0_TwT"/>
+                <Story image={Profile7} nome="Vert_W1ller"/>  
+            </div>
+
+            <div className="feed">
+                <FeedContent 
+                    imageUser={ProfilePic} 
+                    Username="Melo" 
+                    Localidade="SP - São paulo" 
+                    postImage={Post} qntdCurtidas="1.346" 
+                    nomeDescricao="HBOmax" 
+                    descricao="Minha paixão por carros JDM vêm aumentando a cada dia 😍">
+                </FeedContent>
+            
+                <FeedContent 
+                    imageUser={Profile2} 
+                    Username="Mr_Knucles" 
+                    Localidade="SP - São paulo" 
+                    postImage={Post2} qntdCurtidas="10.569" 
+                    nomeDescricao="Mr_Knucles" 
+                    descricao="Venho aqui compartilhar com meus companheiros esse humilde Setup gamer🤞">
+                </FeedContent>
+            
+                <FeedContent 
+                    imageUser={Profile4} 
+                    Username="Shiba_INO" 
+                    Localidade="SP - São paulo" 
+                    postImage={Post3} qntdCurtidas="10M" 
+                    nomeDescricao="Shiba_INO" 
+                    descricao="Sabia que deveria apostar minha renda no fortune tiger, sonho realizado 🤑">
+                </FeedContent>
+          
+                <FeedContent 
+                    imageUser={Profile5} 
+                    Username="Link" 
+                    Localidade="SP - São paulo" 
+                    postImage={Post4} qntdCurtidas="10M" 
+                    nomeDescricao="Link" 
+                    descricao="Minha primeira pixel art, espero que gostem 🥰">
+                </FeedContent>     
+            
+                <FeedContent 
+                    imageUser={Profile6} 
+                    Username="N1k0_TwT" 
+                    Localidade="SP - São paulo" 
+                    postImage={Post5} qntdCurtidas="15" 
+                    nomeDescricao="Link" 
+                    descricao="Comecei na academia a pouco tempo, mas posso dizer que estou todo quebrado 💪😭">
+                </FeedContent>     
+            </div>
         </div>
     )
 }
