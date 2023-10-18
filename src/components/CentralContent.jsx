@@ -17,16 +17,17 @@ import Post5 from "../assets/posts/Academia.jpg";
 export default function CentralContent(){
     return(
         <div className="centralContent">
-            <div className="storyOrder">
-                <Story image={Profile1} nome="Melo"/>
-                <Story image={Profile2} nome="Mr_Knucles"/>
-                <Story image={Profile3} nome="IsabelLayer"/>
-                <Story image={Profile4} nome="Shiba_INO"/>
-                <Story image={Profile5} nome="Link"/>
-                <Story image={Profile6} nome="N1k0_TwT"/>
-                <Story image={Profile7} nome="Vert_W1ller"/>  
-            </div>
-
+            <div className="storyContainer">
+                <div className="storyOrder">
+                    <Story image={Profile1} nome="Melo"/>
+                    <Story image={Profile2} nome="Mr_Knucles"/>
+                    <Story image={Profile3} nome="IsabelLayer"/>
+                    <Story image={Profile4} nome="Shiba_INO"/>
+                    <Story image={Profile5} nome="Link"/>
+                    <Story image={Profile6} nome="N1k0_TwT"/>
+                    <Story image={Profile7} nome="Vert_W1ller"/>  
+                </div>
+            </div>  
             <div className="feed">
                 <FeedContent 
                     imageUser={ProfilePic} 
