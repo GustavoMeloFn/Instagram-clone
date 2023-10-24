@@ -7,6 +7,7 @@ import { BsBookmarkHeart } from "react-icons/bs";
 export default function FeedContent(props){
     return(
         <div className="conteudoFeed">
+            
             <div className="postName">
                 <div className="headerPost">
                     <img className="userImage" src={props.imageUser} alt="Post"/>
@@ -38,7 +39,7 @@ export default function FeedContent(props){
                 </div>
                 <p className="botaoComent">Ver todos os 12 comentários</p>
                 <input type="text" placeholder="Escreva um comentário..." className="customInput"/>
-                <hr className="divisoria"/>
+                <hr/>
             </div>
         </div>  
     )

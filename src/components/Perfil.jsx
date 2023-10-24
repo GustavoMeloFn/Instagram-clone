@@ -11,7 +11,7 @@ export default function Perfil(props){
             <p>{props.nPublicacoes} publicações</p>
             <p>{props.nSeguidores} Seguidores</p>
             <p>{props.nSeguindo} Seguindo</p>
-        </div>
+        </div>  
     </div>
     )
 }

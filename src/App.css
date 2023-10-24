@@ -14,9 +14,9 @@ main{
 /* Componente primário: */
 .leftContent{
   height: 100vh;
-  width: 13.5vw;
+  width: 200px;
   border-right: 1px solid #737373;
-  margin-left: 20px;
+  padding-left: 20px;
   position: fixed;
 }
 
@@ -46,9 +46,14 @@ main{
 }
 
 @media screen and (max-width: 1100px){
-  .text{
-    font-size: 0px;
+  .leftContent{
+    width: 65px;
   }
+
+  .text{
+    display: none;
+  }
+
 }
 
 /* ================================================================================================================== */
@@ -65,14 +70,17 @@ main{
 }
 
 .storyContainer{
+  display: flex;
   width: 100%;
-  margin-left: 15vw;
+  justify-content: center;
+  
 }
 
 .storyOrder{
   width: 80%;
   margin-top: 3%;
   margin-bottom: 60px;
+  padding-left: 50px;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -86,11 +94,6 @@ main{
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .centralContent{
-    margin-left: 22vw;
-  }
-}
 
 /* Subcomponente: Story */
 
@@ -198,10 +201,6 @@ main{
   font-size: 1rem;
 }
 
-.divisoria{
-  margin-top: 10px;
-}
-
 /* ================================================================================================================== */
 
 /* Conteúdo lateral direito ========================================================================================= */
@@ -209,31 +208,26 @@ main{
 /* Componente primário: */
 .rightContent{
   height: 100vh;
-  width: 20vw;
+  width: 400px;
+}
+
+.sugestoesDireito{
+  margin-left: 2.4vw;
 }
 
 .baseDestaque{
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.backgroundDestaque{
-  display: flex;  
-  align-items: center;
-  justify-content: center;
-  width: 86px;
-  height: 86px;
-  border-radius: 100%;
-  background: linear-gradient( #c82d8e, #f99d5c);
-}
+} 
 
 .perfilDestaque{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10%;
-  margin-right: 4.5vw;
+  margin-right: 10px;
+  width: 320px;
 }
 
 .destaqueProfile{
@@ -247,11 +241,67 @@ main{
   display: flex;
   margin-top: 10px;
   align-items: center;
+  gap: 10px;
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+.perfilSugestoes{
+  display: flex;
+  align-items: center;
+}
+
+.btnSeguir{
+  color: #0095F6;
+  font-size: 12px;
+}
+
+.nomePerfilSugerido h4{
+  font-size: 14px;
+}
+
+.nomePerfilSugerido p{
+  font-size: 12px;
+}
+
+.userImageSugestoes{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 8px;
+  border: 1px solid rgb(142, 142, 142);
+}
+
+.containerSugestoes{
+  display: flex;
+  height: 44px;
+  width: 283px;
+  margin-bottom: 25px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugestoes{
+  display: flex;
+}
+
+.creditos{
+  font-size: 12px;
+  color:#C7C7C7;
+}
+
+/* ================================================================================================================== */
+/* Reponsividade geral ============================================================================================== */ 
+
+@media screen and (max-width: 1325px) {
   .rightContent{
-    visibility: hidden;
+    display: none;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .centralContent{
+    margin-left: 140px;
+  }
+}
+
