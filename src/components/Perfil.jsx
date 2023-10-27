@@ -8,9 +8,19 @@ export default function Perfil(props){
         </div>
         </div>
         <div className="followers">
-            <p>{props.nPublicacoes} publicações</p>
-            <p>{props.nSeguidores} Seguidores</p>
-            <p>{props.nSeguindo} Seguindo</p>
+            <div>
+                <p>{props.nPublicacoes}</p>
+                <p className="publi">Publicações</p>
+            </div>
+            <div>
+                <p>{props.nSeguidores}</p>
+                <p className="publi">Seguidores</p>
+            </div>
+            <div>
+                <p>{props.nSeguindo}</p>
+                <p className="publi">Seguindo</p>
+            </div>
+            
         </div>  
     </div>
     )

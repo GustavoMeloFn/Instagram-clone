@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background-color: white;
 }
 
 main{
@@ -18,6 +19,28 @@ main{
   border-right: 1px solid #737373;
   padding-left: 20px;
   position: fixed;
+  display: flex;
+  flex-direction: column; 
+}
+
+.containerLeftContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.moreInfo{
+  margin-top: 290px;
+  font-size: 1.2rem;
+  list-style: none;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MoreInfo li{
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
 }
 
 .logotype img{
@@ -31,7 +54,7 @@ main{
   list-style: none;
   margin-left: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .navegacao li{
@@ -45,9 +68,25 @@ main{
   margin-right: 8px;
 }
 
+.perfilIcon{
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
 @media screen and (max-width: 1100px){
   .leftContent{
     width: 65px;
+  }
+  
+  .anotherLogo{
+    content: url(./assets/anotherLogo.png);
+    height: 26px;
+    width: 26px;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
 
   .text{
@@ -237,6 +276,10 @@ main{
   border: 4px solid black;
 }
 
+.publi{
+  font-weight: 500;
+}
+
 .followers{
   display: flex;
   margin-top: 10px;
@@ -301,7 +344,7 @@ main{
 
 @media screen and (max-width: 1000px) {
   .centralContent{
-    margin-left: 140px;
+    margin-left: 150px;
   }
 }
-
+  

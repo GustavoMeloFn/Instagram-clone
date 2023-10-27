@@ -7,18 +7,19 @@ import { AiOutlineVideoCamera } from "react-icons/ai";
 import { AiOutlineSend } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineUpload } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
+import { CgDetailsMore } from "react-icons/cg";
+import Perfil from "../assets/profilePic/Melo.jpg";
 
 export default function LeftContent(){
     return(
         <div className='leftContent'>
+            <nav>
             <div className='logotype'>
-                <img src= {logotipo} alt='Logo'/>
+                <img src= {logotipo} alt='Logo' className="anotherLogo"/>
             </div>
 
-            <nav>
                 {/* <ItensMenu> chama um componente, já "icone"/"texto" pega o props com este nome e logo em seguida realiza a alteração de dados*/}
-                <ul>
+                <ul className="navegacao">
                     <ItensMenu icone={<GrHomeRounded/>} texto=" Home"/>
                     <ItensMenu icone={<AiOutlineSearch/>} texto=" Pesquisa"/>
                     <ItensMenu icone={<AiOutlineCompass/>} texto=" Explorar"/>
@@ -26,9 +27,19 @@ export default function LeftContent(){
                     <ItensMenu icone={<AiOutlineSend/>} texto=" Mensagens"/>
                     <ItensMenu icone={<AiOutlineHeart/>} texto=" Notificações"/>
                     <ItensMenu icone={<AiOutlineUpload/>} texto=" Criar"/>
-                    <ItensMenu icone={<AiOutlineUser/>} texto=" Perfil"/>
+                    <li>
+                        <img src={Perfil} className="perfilIcon" />
+                        <span className="text">Perfil</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul className="moreInfo">
+                    <ItensMenu icone={<CgDetailsMore/>} texto="Mais"/>
                 </ul>
             </nav>
         </div>
     )
 }
+
+

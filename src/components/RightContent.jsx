@@ -1,5 +1,5 @@
 import Perfil from "./Perfil";
-import ProfileUser from "../assets/profilePic/LinkKawai.jpg";
+import ProfileUser from "../assets/profilePic/Melo.jpg";
 import Profile1 from "../assets/profilePic/Felipe.jpg";
 import Profile2 from "../assets/profilePic/Camile.jpg";
 import Profile3 from "../assets/profilePic/Lucas.jpg";
@@ -13,7 +13,7 @@ export default function RightContent(){
                 nPublicacoes="1243"
                 nSeguidores="5M"
                 nSeguindo="10"
-                nameUserDestaque="Gustavo de melo Fernandes"
+                nameUserDestaque="Gustavo de Melo Fernandes"
             />
 
             <br/>
