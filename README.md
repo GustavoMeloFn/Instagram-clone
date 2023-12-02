@@ -1,4 +1,4 @@
-<h1>Desafio de Programação: Clone do Instagram</h1>
+<h1><a href="https://instagram-clone-phi-gray.vercel.app/">Clone do Instagram</a></h1>
 
 <p>Se você está em busca de um desafio empolgante de programação, confira este projeto que desenvolvi recentemente: um clone da versão web do Instagram. Utilizei as tecnologias React e Vite para a construção do aplicativo, e integrei uma API de geração de imagens para tornar o projeto mais dinâmico.</p>
 
@@ -18,5 +18,5 @@
     <li>Clone este repositório.</li>
     <li>Instale as dependências usando <code>npm install</code>.</li>
     <li>Execute o aplicativo com <code>npm start</code>.</li>
-    <li>Explore o clone da versão web do Instagram e divirta-se!</li>
+    <li>Sinta-se livre para explorar o meu projeto.</li>
 </ol>
