@@ -1,8 +1,22 @@
-# React + Vite
+<h1>Desafio de Programação: Clone do Instagram</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    <p>Se você está em busca de um desafio empolgante de programação, confira este projeto que desenvolvi recentemente: um clone da versão web do Instagram. Utilizei as tecnologias React e Vite para a construção do aplicativo, e integrei uma API de geração de imagens para tornar o projeto mais dinâmico.</p>
 
-Currently, two official plugins are available:
+    <p>Para tornar a experiência ainda mais interessante, realizei algumas alterações na interface visual, adicionando um toque pessoal ao projeto. 😄</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    <h2>Tecnologias Utilizadas</h2>
+
+    <ul>
+        <li>React</li>
+        <li>Vite</li>
+        <li>API de Geração de Imagens</li>
+    </ul>
+
+    <h2>Como Executar o Projeto</h2>
+
+    <ol>
+        <li>Clone este repositório.</li>
+        <li>Instale as dependências usando <code>npm install</code>.</li>
+        <li>Execute o aplicativo com <code>npm start</code>.</li>
+        <li>Explore o clone da versão web do Instagram e divirta-se!</li>
+    </ol>
